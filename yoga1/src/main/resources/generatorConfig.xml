@@ -3,10 +3,10 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <classPathEntry
-            location="D:\develop\apache-maven-3.6.3-bin\apache-maven-3.6.3\myresp\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar"/>
+            location="D:\develop\apache-maven-3.6.3\myresp\mysql\mysql-connector-java\5.1.47\mysql-connector-java-5.1.47.jar"/>
     <context id="context1" targetRuntime="mybatis3">
         <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/yoga1" driverClass="com.mysql.jdbc.Driver"
-                        password="root" userId="root"/>
+                        password="123456" userId="root"/>
         <javaModelGenerator targetPackage="com.yoga.entity" targetProject="src/main/java"/>
         <sqlMapGenerator targetPackage="com.yoga.mapper" targetProject="src/main/java"/>
         <javaClientGenerator targetPackage="com.yoga.mapper" targetProject="src/main/java" type="XMLMAPPER"/>
