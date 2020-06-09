@@ -41,6 +41,15 @@
     <result column="bak2" jdbcType="VARCHAR" property="bak2" />
     <result column="bak3" jdbcType="VARCHAR" property="bak3" />
   </resultMap>
+  <resultMap id="BaseResultMapWithRole" type="com.yoga.entity.Userinfo" extends="BaseResultMap">
+    <collection property="roles" column="userid" select="com.yoga.mapper.RoleMapper.findByUid"></collection>
+  </resultMap>
+  <resultMap id="BaseResultMapWithRoleTree" type="com.yoga.entity.Userinfo" extends="BaseResultMapWithRole">
+    <collection property="trees" column="userid" select="com.yoga.mapper.TreeMapper.findByUid"></collection>
+  </resultMap>
+  <select id="loginin" resultMap="BaseResultMapWithRoleTree" >
+    select * from userinfo where uname=#{uname}
+  </select>
   <sql id="Example_Where_Clause">
     <!--
       WARNING - @mbg.generated

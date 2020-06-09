@@ -1,6 +1,7 @@
 package com.yoga.entity;
 
 import java.util.Date;
+import java.util.List;
 
 public class Userinfo {
     /**
@@ -11,6 +12,31 @@ public class Userinfo {
      * @mbg.generated Mon Jun 08 15:16:38 CST 2020
      */
     private Integer uid;
+
+    public List getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List roles) {
+        this.roles = roles;
+    }
+
+    public List getTrees() {
+        return trees;
+    }
+
+    public void setTrees(List trees) {
+        this.trees = trees;
+    }
+
+    /**
+     * 添加role 与 tree集合
+     * @author ayw
+     *
+     */
+    private List roles;
+
+    private List trees;
 
     /**
      *

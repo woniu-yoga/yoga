@@ -12,6 +12,13 @@
     <result column="url" jdbcType="VARCHAR" property="url" />
     <result column="pid" jdbcType="INTEGER" property="pid" />
   </resultMap>
+  <select id="findByUid" resultMap="BaseResultMap" parameterType="int">
+    SELECT * FROM tree WHERE tid IN (
+        SELECT tid FROM roletree WHERE roleid IN (
+        SELECT roleid FROM userinforole WHERE uid=#{uid}
+        )
+    )
+  </select>
   <sql id="Example_Where_Clause">
     <!--
       WARNING - @mbg.generated

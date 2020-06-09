@@ -93,4 +93,13 @@ public interface UserinfoMapper {
      * @mbg.generated Mon Jun 08 15:16:38 CST 2020
      */
     int updateByPrimaryKey(Userinfo record);
+
+    /**
+     * 查询所有的权限且用于直接的展示
+     * @param uname
+     *
+     * @return
+     */
+
+    Userinfo loginin(@Param("uname")String uname );
 }

@@ -21,6 +21,12 @@ public interface IUserinfoService {
     //修改用户
     void update(Userinfo userinfo);
 
+    /**
+     * @author ayw
+     * 根据名称查找用户顺便带出权限以及角色
+     */
+    Userinfo loginin(String uname);
+
 
 
 }

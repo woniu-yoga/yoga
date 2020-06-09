@@ -3,6 +3,7 @@ package com.yoga.service.impl;
 import com.yoga.entity.Userinfo;
 import com.yoga.mapper.UserinfoMapper;
 import com.yoga.service.IUserinfoService;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -34,5 +35,10 @@ public class UserinfoServiceImpl implements IUserinfoService {
     @Override
     public void update(Userinfo userinfo) {
 
+    }
+
+    @Override
+    public Userinfo loginin(String uname  ) {
+        return userinfoMapper.loginin(uname);
     }
 }
