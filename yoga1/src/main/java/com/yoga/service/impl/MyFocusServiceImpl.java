@@ -21,6 +21,7 @@ import java.util.List;
 @Service
 @Transactional
 public class MyFocusServiceImpl implements IMyFocusService {
+
     @Resource
     private MyFocusMapper myFocusMapper;
     @Resource

@@ -2,6 +2,7 @@ package com.yoga.service.impl;
 
 import com.yoga.entity.Myfriend;
 import com.yoga.entity.MyfriendExample;
+import com.yoga.entity.MyfriendKey;
 import com.yoga.entity.Userinfo;
 import com.yoga.mapper.MyfriendMapper;
 import com.yoga.mapper.UserinfoMapper;
@@ -44,5 +45,20 @@ public class MyFriendServiceImpl implements IMyFriendService {
     public Userinfo getFriendById(Integer toid) {
         Userinfo userinfo = userinfoMapper.selectByPrimaryKey(toid);
         return userinfo;
+    }
+
+    @Override
+    public void delete(MyfriendKey myfriendKey) {
+        myfriendMapper.deleteByPrimaryKey(myfriendKey);
+    }
+
+    @Override
+    public void save(Myfriend myfriend) {
+        myfriendMapper.insert(myfriend);
+    }
+
+    @Override
+    public void update(Myfriend myfriend) {
+        myfriendMapper.updateByPrimaryKey(myfriend);
     }
 }

@@ -1,6 +1,7 @@
 package com.yoga.service;
 
 import com.yoga.entity.Myfriend;
+import com.yoga.entity.MyfriendKey;
 import com.yoga.entity.Userinfo;
 
 import java.util.List;
@@ -16,5 +17,10 @@ public interface IMyFriendService {
 
     Userinfo getFriendById(Integer toid);
 
+    void delete(MyfriendKey myfriendKey);
+
+    void save(Myfriend myfriend);
+
+    void update(Myfriend myfriend);
 
 }
