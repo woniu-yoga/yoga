@@ -26,13 +26,27 @@ public class MyFocusServiceImpl implements IMyFocusService {
     private MyFocusMapper myFocusMapper;
     @Resource
     private UserinfoMapper userinfoMapper;
-
+    //获取我关注的用户信息
     @Override
     public List<Userinfo> getMyFocus(Integer focusid) {
         List<Userinfo> userinfoList = new ArrayList<>();
         MyFocusExample example = new MyFocusExample();
         MyFocusExample.Criteria criteria = example.createCriteria();
         criteria.andFocusUidEqualTo(focusid);
+        List<MyFocus> myFocusList = myFocusMapper.selectByExample(example);
+        for (MyFocus myFocus : myFocusList) {
+            Userinfo userinfo = userinfoMapper.selectByPrimaryKey(myFocus.getFocusUid());
+            userinfoList.add(userinfo);
+        }
+        return userinfoList;
+    }
+    //获取我的粉丝信息
+    @Override
+    public List<Userinfo> getMyFocused(Integer focusedid) {
+        List<Userinfo> userinfoList = new ArrayList<>();
+        MyFocusExample example = new MyFocusExample();
+        MyFocusExample.Criteria criteria = example.createCriteria();
+        criteria.andFocusedUidEqualTo(focusedid);
         List<MyFocus> myFocusList = myFocusMapper.selectByExample(example);
         for (MyFocus myFocus : myFocusList) {
             Userinfo userinfo = userinfoMapper.selectByPrimaryKey(myFocus.getFocusedUid());

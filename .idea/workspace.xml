@@ -40,12 +40,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4d6733-ad55-4e31-959f-9d7adcdfc79a" name="Default Changelist" comment="用户模块：我的好友，我关注的人   业务层代码编写——bai">
+    <list default="true" id="ed4d6733-ad55-4e31-959f-9d7adcdfc79a" name="Default Changelist" comment="完善MyFriend模块和MyFocus模块">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/controller/UserinfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/controller/UserinfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IMyFriendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IMyFriendService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/YogaCircleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/YogaCircleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/YogaCircleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/YogaCircleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IMyFocusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IMyFocusService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/MyFocusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/MyFocusServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/MyFriendServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/MyFriendServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/UserinfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/UserinfoServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +60,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -174,6 +176,7 @@
       <workItem from="1591715056347" duration="4217000" />
       <workItem from="1591751805053" duration="2646000" />
       <workItem from="1591787718748" duration="4815000" />
+      <workItem from="1591798250676" duration="9970000" />
     </task>
     <task id="LOCAL-00001" summary="userinfo service">
       <created>1591670595893</created>
@@ -217,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591721173173</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="完善MyFriend模块和MyFocus模块">
+      <created>1591798481057</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591798481057</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,53 +250,54 @@
     <MESSAGE value="mybatis逆向" />
     <MESSAGE value="mybatis逆向:bai" />
     <MESSAGE value="用户模块：我的好友，我关注的人   业务层代码编写——bai" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户模块：我的好友，我关注的人   业务层代码编写——bai" />
+    <MESSAGE value="完善MyFriend模块和MyFocus模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善MyFriend模块和MyFocus模块" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="18" width="1207" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591705221688">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="18" width="1207" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591705221688" />
-    <state x="488" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1591792295555">
+    <state x="488" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1591805675611">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1591792295555" />
+    <state x="488" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1591805675611" />
     <state x="463" y="49" key="FileChooserDialogImpl" timestamp="1591638147063">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="49" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591638147063" />
-    <state width="1322" height="75" key="GridCell.Tab.0.bottom" timestamp="1591792792854">
+    <state width="1322" height="245" key="GridCell.Tab.0.bottom" timestamp="1591808219124">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="75" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591792792854" />
-    <state width="1322" height="75" key="GridCell.Tab.0.center" timestamp="1591792792854">
+    <state width="1322" height="245" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591808219124" />
+    <state width="1322" height="245" key="GridCell.Tab.0.center" timestamp="1591808219124">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="75" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591792792854" />
-    <state width="1322" height="75" key="GridCell.Tab.0.left" timestamp="1591792792854">
+    <state width="1322" height="245" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591808219124" />
+    <state width="1322" height="245" key="GridCell.Tab.0.left" timestamp="1591808219124">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="75" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591792792854" />
-    <state width="1322" height="75" key="GridCell.Tab.0.right" timestamp="1591792792854">
+    <state width="1322" height="245" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591808219124" />
+    <state width="1322" height="245" key="GridCell.Tab.0.right" timestamp="1591808219124">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="75" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591792792854" />
-    <state width="1322" height="75" key="GridCell.Tab.1.bottom" timestamp="1591792792855">
+    <state width="1322" height="245" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591808219124" />
+    <state width="1322" height="245" key="GridCell.Tab.1.bottom" timestamp="1591808219124">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="75" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591792792855" />
-    <state width="1322" height="75" key="GridCell.Tab.1.center" timestamp="1591792792854">
+    <state width="1322" height="245" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591808219124" />
+    <state width="1322" height="245" key="GridCell.Tab.1.center" timestamp="1591808219124">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="75" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591792792854" />
-    <state width="1322" height="75" key="GridCell.Tab.1.left" timestamp="1591792792854">
+    <state width="1322" height="245" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591808219124" />
+    <state width="1322" height="245" key="GridCell.Tab.1.left" timestamp="1591808219124">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="75" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591792792854" />
-    <state width="1322" height="75" key="GridCell.Tab.1.right" timestamp="1591792792855">
+    <state width="1322" height="245" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591808219124" />
+    <state width="1322" height="245" key="GridCell.Tab.1.right" timestamp="1591808219124">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="75" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591792792855" />
+    <state width="1322" height="245" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591808219124" />
     <state x="306" y="65" key="NewModule_or_Project.wizard" timestamp="1591638150102">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -295,10 +306,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591705462979" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1591721229487">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1591798514704">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591721229487" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591798514704" />
     <state x="459" y="148" key="git4idea.merge.GitMergeDialog" timestamp="1591682575248">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
