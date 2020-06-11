@@ -10,7 +10,12 @@
     <id column="cid" jdbcType="VARCHAR" property="cid" />
     <result column="cname" jdbcType="VARCHAR" property="cname" />
     <result column="pid" jdbcType="VARCHAR" property="pid" />
+    <collection property="zones" column="cid" select="com.yoga.mapper.ZoneMapper.findByCid"></collection>
   </resultMap>
+
+  <select id="findByPid" resultMap="BaseResultMap">
+    select * from city where pid=#{pid}
+  </select>
   <sql id="Example_Where_Clause">
     <!--
       WARNING - @mbg.generated

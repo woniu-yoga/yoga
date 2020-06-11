@@ -9,6 +9,8 @@
     -->
     <id column="countryid" jdbcType="VARCHAR" property="countryid" />
     <result column="countryname" jdbcType="VARCHAR" property="countryname" />
+    <collection property="provinces" column="countryid" select="com.yoga.mapper.ProvinceMapper.findByCountryid">
+    </collection>
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--

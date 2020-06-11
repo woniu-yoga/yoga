@@ -28,5 +28,5 @@ public interface IUserinfoService {
     Userinfo loginin(String uname);
 
 
-
+    void insert(Userinfo info);
 }

@@ -11,7 +11,12 @@
     <result column="pname" jdbcType="VARCHAR" property="pname" />
     <result column="countryid" jdbcType="VARCHAR" property="countryid" />
     <result column="pcode" jdbcType="VARCHAR" property="pcode" />
+    <collection property="citys" column="pid" select="com.yoga.mapper.CityMapper.findByPid">
+    </collection>
   </resultMap>
+  <select id="findByCountryid" resultMap="BaseResultMap">
+    select * from province where countryid=#{countryid}
+  </select>
   <sql id="Example_Where_Clause">
     <!--
       WARNING - @mbg.generated
