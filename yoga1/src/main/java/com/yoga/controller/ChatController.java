@@ -17,6 +17,7 @@ public class ChatController {
     //存储客户端的连接对象,每个客户端连接都会产生一个连接对象
     private static ConcurrentHashMap<String,ChatController> map=new ConcurrentHashMap();
     //每个连接都会有自己的会话
+    //哈哈哈
     private Session session;
     private String name;
     @OnOpen
