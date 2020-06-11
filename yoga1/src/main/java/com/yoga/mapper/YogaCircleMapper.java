@@ -93,4 +93,6 @@ public interface YogaCircleMapper {
      * @mbg.generated Tue Jun 09 19:11:09 GMT+08:00 2020
      */
     int updateByPrimaryKey(YogaCircle record);
+
+    List<YogaCircle> findYogaCircle(List<Integer> uids);
 }

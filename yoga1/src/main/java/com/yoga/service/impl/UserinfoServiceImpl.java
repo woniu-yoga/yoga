@@ -5,6 +5,7 @@ import com.yoga.mapper.UserinfoMapper;
 import com.yoga.service.IUserinfoService;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -12,8 +13,10 @@ import java.util.List;
 /**
  * @author bai
  * @create 2020-06-09-上午 9:40
+ * @desc 用户模块业务层接口
  */
 @Service
+@Transactional
 public class UserinfoServiceImpl implements IUserinfoService {
     @Resource
     private UserinfoMapper userinfoMapper;
@@ -34,11 +37,11 @@ public class UserinfoServiceImpl implements IUserinfoService {
 
     @Override
     public void update(Userinfo userinfo) {
-
+        userinfoMapper.updateByPrimaryKey(userinfo);
     }
 
     @Override
-    public Userinfo loginin(String uname  ) {
+    public Userinfo loginin(String uname) {
         return userinfoMapper.loginin(uname);
     }
 

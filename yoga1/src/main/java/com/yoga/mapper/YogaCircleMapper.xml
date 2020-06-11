@@ -298,4 +298,14 @@
       bak2 = #{bak2,jdbcType=INTEGER}
     where yoga_circle_id = #{yogaCircleId,jdbcType=INTEGER}
   </update>
+
+
+  <!-- 查询我的瑜乐圈展示所有的好友动态，根据发布时间排序 -->
+<!--  <select id="findYogaCircle" parameterType="Integer[]" resultType="com.yoga.entity.YogaCircle" >-->
+<!--    select * from yoga_circle where circle_uid in-->
+<!--      <foreach collection="list" item="uid"  open="(" separator="," close=")">-->
+<!--        #{uid}-->
+<!--      </foreach>-->
+<!--   order by circle_time desc-->
+<!--  </select>-->
 </mapper>
