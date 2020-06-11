@@ -10,20 +10,20 @@
         <javaModelGenerator targetPackage="com.yoga.entity" targetProject="src/main/java"/>
         <sqlMapGenerator targetPackage="com.yoga.mapper" targetProject="src/main/java"/>
         <javaClientGenerator targetPackage="com.yoga.mapper" targetProject="src/main/java" type="XMLMAPPER"/>
-          <table schema="" tableName="city">
-          </table>
-          <table schema="" tableName="coach">
-          </table>
+<!--          <table schema="" tableName="city">-->
+<!--          </table>-->
+<!--          <table schema="" tableName="coach">-->
+<!--          </table>-->
 <!--          <table schema="" tableName="coach_course">-->
 <!--          </table>-->
 <!--          <table schema="" tableName="coach_order">-->
 <!--          </table>-->
 <!--        <table schema="" tableName="comment">-->
 <!--        </table>-->
-        <table schema="" tableName="country">
-        </table>
-        <table schema="" tableName="flowtype">
-        </table>
+<!--        <table schema="" tableName="country">-->
+<!--        </table>-->
+<!--        <table schema="" tableName="flowtype">-->
+<!--        </table>-->
 <!--        <table schema="" tableName="friend_req">-->
 <!--        </table>-->
 <!--        <table schema="" tableName="in_out_type">-->
@@ -34,12 +34,12 @@
 <!--        </table>-->
 <!--        <table schema="" tableName="myfriend">-->
 <!--        </table>-->
-        <table schema="" tableName="province">
+<!--        <table schema="" tableName="province">-->
+<!--        </table>-->
+        <table schema="" tableName="purse">
         </table>
-<!--        <table schema="" tableName="purse">-->
-<!--        </table>-->
-<!--        <table schema="" tableName="purse_in_out">-->
-<!--        </table>-->
+        <table schema="" tableName="purse_in_out">
+        </table>
 <!--        <table schema="" tableName="role">-->
 <!--        </table>-->
 <!--        <table schema="" tableName="roletree">-->
@@ -50,8 +50,8 @@
 <!--        </table>-->
 <!--        <table schema="" tableName="userinforole">-->
 <!--        </table>-->
-        <table schema="" tableName="venue">
-        </table>
+<!--        <table schema="" tableName="venue">-->
+<!--        </table>-->
 <!--        <table schema="" tableName="venue_course">-->
 <!--        </table>-->
 <!--        <table schema="" tableName="venue_order">-->
@@ -72,13 +72,13 @@
 <!--        </table>-->
 <!--        <table schema="" tableName="zan">-->
 <!--        </table>-->
-        <table schema="" tableName="zone">
-        </table>
+<!--        <table schema="" tableName="zone">-->
+<!--        </table>-->
 <!--        <table schema="" tableName="coach_venue_pj">-->
 <!--        </table>-->
 <!--        <table schema="" tableName="home_show">
-        </table>-->
-        <table schema="" tableName="venue_coach">
-        </table>
+            </table>-->
+<!--        <table schema="" tableName="venue_coach">-->
+<!--        </table>-->
     </context>
 </generatorConfiguration>

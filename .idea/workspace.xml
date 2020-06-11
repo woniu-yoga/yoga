@@ -37,17 +37,18 @@
         <item name="GROUP_NODE:yoga1" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed4d6733-ad55-4e31-959f-9d7adcdfc79a" name="Default Changelist" comment="完善MyFriend模块和MyFocus模块">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/controller/UserinfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/controller/UserinfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/YogaCircleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/YogaCircleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/YogaCircleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/YogaCircleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IMyFocusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IMyFocusService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/MyFocusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/MyFocusServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/UserinfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/UserinfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/yoga1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/yoga1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +107,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/yoga1" />
     <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24812734" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
@@ -177,6 +178,9 @@
       <workItem from="1591751805053" duration="2646000" />
       <workItem from="1591787718748" duration="4815000" />
       <workItem from="1591798250676" duration="9970000" />
+      <workItem from="1591856498100" duration="133000" />
+      <workItem from="1591856683216" duration="583000" />
+      <workItem from="1591857330614" duration="424000" />
     </task>
     <task id="LOCAL-00001" summary="userinfo service">
       <created>1591670595893</created>
@@ -238,7 +242,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -262,6 +278,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1591805675611" />
+    <state x="466" y="269" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1591857163318">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="269" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1366.728@0.0.1366.728" timestamp="1591857163318" />
     <state x="463" y="49" key="FileChooserDialogImpl" timestamp="1591638147063">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -302,10 +322,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="306" y="65" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1591638150102" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1591705462979">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1591857178358">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591705462979" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591857178358" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1591798514704">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
