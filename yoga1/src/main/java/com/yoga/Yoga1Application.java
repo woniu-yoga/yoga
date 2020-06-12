@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 @MapperScan("com.yoga.mapper")
 
 @SpringBootApplication
+@MapperScan("com.yoga.mapper")
 public class Yoga1Application {
-
     public static void main(String[] args) {
         SpringApplication.run(Yoga1Application.class, args);
     }

@@ -28,5 +28,4 @@ public interface IUserinfoService {
     Userinfo loginin(String uname);
 
 
-
 }

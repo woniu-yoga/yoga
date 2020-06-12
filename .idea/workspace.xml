@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:yoga1" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f232d65b-1a58-4758-bd36-16ba2a63f14f" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
@@ -333,11 +373,18 @@
       <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/shiro/ShiroConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/shiro/ShiroConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yoga1/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yoga1/yoga1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/yoga1.iml" afterDir="false" />
+=======
+    <list default="true" id="ed4d6733-ad55-4e31-959f-9d7adcdfc79a" name="Default Changelist" comment="场馆以及场馆拥有的功能的实现">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> origin/master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -346,6 +393,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>WebSocketServer</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -358,15 +410,18 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../java2maven/maven/apache-maven-3.6.3" />
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../develop/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\develop\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1d46zJOFWXxdaDrShYlmqmxzE5F" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1d2z8aZtOiVb8yEDH913hczVi7s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -374,46 +429,38 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/yoga1/src/main/webapp" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591859580063" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.side.proportion" value="0.24812734" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\student\新建文件夹 (2)\git\yoga001\yoga1\src\main\webapp" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yoga.controller" />
+      <recent name="com.yoga.service.impl" />
+      <recent name="com.yoga.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\ideaproject2\yoga\yoga1\src\main\java\com\yoga\entity" />
+      <recent name="G:\ideaproject2\yoga\yoga1\src\main\java\com\yoga\mapper" />
+      <recent name="G:\ideaproject2\yoga\yoga1\src\main\java\com\yoga\service\impl" />
+      <recent name="C:\Users\Administrator\yoga\yoga1\src\main\java\com\yoga\tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.yoga1 [spring-boot:run]">
-    <configuration name="yoga1 [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="spring-boot:run" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/yoga1" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Yoga1Application">
     <configuration name="Yoga1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="yoga1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yoga.Yoga1Application" />
@@ -428,28 +475,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
+    <list>
+      <item itemvalue="Spring Boot.YogaApplication" />
+      <item itemvalue="Spring Boot.Yoga1Application" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f232d65b-1a58-4758-bd36-16ba2a63f14f" name="Default Changelist" comment="" />
-      <created>1591672278449</created>
+      <changelist id="ed4d6733-ad55-4e31-959f-9d7adcdfc79a" name="Default Changelist" comment="" />
+      <created>1591637820681</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1591672278449</updated>
       <workItem from="1591672284892" duration="3201000" />
       <workItem from="1591682390889" duration="13003000" />
@@ -467,27 +507,95 @@
       <updated>1591702603506</updated>
     </task>
     <option name="localTasksCounter" value="2" />
+=======
+      <updated>1591637820681</updated>
+      <workItem from="1591637848384" duration="498000" />
+      <workItem from="1591665866075" duration="12517000" />
+      <workItem from="1591705786210" duration="591000" />
+      <workItem from="1591707023944" duration="674000" />
+      <workItem from="1591749672761" duration="14802000" />
+      <workItem from="1591857613974" duration="718000" />
+    </task>
+    <task id="LOCAL-00001" summary="userinfo service">
+      <created>1591670595893</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591670595893</updated>
+    </task>
+    <task id="LOCAL-00002" summary="userinfo service">
+      <created>1591686173218</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591686173218</updated>
+    </task>
+    <task id="LOCAL-00003" summary="mybatis逆向">
+      <created>1591701352244</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591701352244</updated>
+    </task>
+    <task id="LOCAL-00004" summary="场馆以及场馆拥有的功能的实现">
+      <created>1591864623426</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591864623426</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+>>>>>>> origin/master
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="userinfo service" />
+    <MESSAGE value="mybatis逆向" />
+    <MESSAGE value="场馆以及场馆拥有的功能的实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="场馆以及场馆拥有的功能的实现" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="shiro :ayw" />
     <option name="LAST_COMMIT_MESSAGE" value="shiro :ayw" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1591701403496">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="137" y="18" width="1207" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591705221688">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1591701403496" />
-    <state x="557" y="319" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1591673117706">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="137" y="18" width="1207" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591705221688" />
+    <state x="488" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1591666893979">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="557" y="319" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1536.824@0.0.1536.824" timestamp="1591673117706" />
-    <state x="363" y="4" key="#yoga1_[spring-boot:run]" timestamp="1591691847035">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
+<<<<<<< HEAD
     <state x="363" y="4" key="#yoga1_[spring-boot:run]/0.0.1536.824@0.0.1536.824" timestamp="1591691847035" />
     <state x="262" y="6" key="CommitChangelistDialog2" timestamp="1591702601706">
       <screen x="0" y="0" width="1536" height="824" />
@@ -569,5 +677,74 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="480" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1591702811794" />
+=======
+    <state x="488" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1591666893979" />
+    <state x="463" y="49" key="FileChooserDialogImpl" timestamp="1591638147063">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="49" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591638147063" />
+    <state width="584" height="255" key="GridCell.Tab.0.bottom" timestamp="1591864308607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1322" height="99" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591705474204" />
+    <state width="584" height="255" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
+    <state width="584" height="255" key="GridCell.Tab.0.center" timestamp="1591864308607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1322" height="99" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591705474204" />
+    <state width="584" height="255" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
+    <state width="584" height="255" key="GridCell.Tab.0.left" timestamp="1591864308607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1322" height="99" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591705474204" />
+    <state width="584" height="255" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
+    <state width="584" height="255" key="GridCell.Tab.0.right" timestamp="1591864308607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1322" height="99" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591705474204" />
+    <state width="584" height="255" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
+    <state width="584" height="255" key="GridCell.Tab.1.bottom" timestamp="1591864308607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1322" height="88" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591701049746" />
+    <state width="584" height="255" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
+    <state width="584" height="255" key="GridCell.Tab.1.center" timestamp="1591864308607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1322" height="88" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591701049744" />
+    <state width="584" height="255" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
+    <state width="584" height="255" key="GridCell.Tab.1.left" timestamp="1591864308607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1322" height="88" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591701049744" />
+    <state width="584" height="255" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
+    <state width="584" height="255" key="GridCell.Tab.1.right" timestamp="1591864308607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1322" height="88" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591701049745" />
+    <state width="584" height="255" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
+    <state x="306" y="65" key="NewModule_or_Project.wizard" timestamp="1591638150102">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="306" y="65" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1591638150102" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1591705462979">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591705462979" />
+    <state x="309" y="109" key="Vcs.Push.Dialog.v2" timestamp="1591864816990">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591701384061" />
+    <state x="309" y="109" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591864816990" />
+    <state x="516" y="168" key="git4idea.merge.GitMergeDialog" timestamp="1591864852206">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="459" y="148" key="git4idea.merge.GitMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1591682575248" />
+    <state x="516" y="168" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1591864852206" />
+    <state x="381" y="148" key="git4idea.merge.GitPullDialog" timestamp="1591700613807">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="381" y="148" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1591700613807" />
+>>>>>>> origin/master
   </component>
 </project>

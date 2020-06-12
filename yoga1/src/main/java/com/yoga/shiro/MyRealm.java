@@ -1,5 +1,6 @@
 package com.yoga.shiro;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yoga.entity.Role;
 import com.yoga.entity.Tree;
@@ -65,7 +66,12 @@ public class MyRealm extends AuthorizingRealm {
             trees.add(tree);
 
             ObjectMapper objectMapper = new ObjectMapper();
-            String json = objectMapper.writeValueAsString(trees);
+            String json = null;
+            try {
+                json = objectMapper.writeValueAsString(trees);
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
 
             HttpServletRequest request= ((ServletRequestAttributes)(RequestContextHolder.currentRequestAttributes())).getRequest();
             request.getSession().setAttribute("json", json);

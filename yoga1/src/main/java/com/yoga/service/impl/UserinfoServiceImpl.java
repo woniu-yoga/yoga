@@ -43,4 +43,6 @@ public class UserinfoServiceImpl implements IUserinfoService {
     public Userinfo loginin(String uname  ) {
         return userinfoMapper.loginin(uname);
     }
+
+
 }
