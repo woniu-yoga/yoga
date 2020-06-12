@@ -18,7 +18,7 @@ import javax.annotation.Resource;
 public class loginController {
     @Resource
     private IUserinfoService userinfoService;
-    @PostMapping("/login")
+    @PostMapping("login")
     public String login(Userinfo info, ModelMap map) {
         System.out.println(info.getUname()+"----"+info.getUpass());
         Subject currentUser = SecurityUtils.getSubject();

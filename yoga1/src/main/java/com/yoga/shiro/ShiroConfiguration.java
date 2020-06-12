@@ -22,7 +22,7 @@ public class ShiroConfiguration {
     @Bean
     public ShiroFilterFactoryBean shiroFilterFactoryBean(SecurityManager securityManager){
         ShiroFilterFactoryBean factoryBean = new ShiroFilterFactoryBean();
-        factoryBean.setLoginUrl("/index.jsp");
+//        factoryBean.setLoginUrl("/index.jsp");
         factoryBean.setSuccessUrl("/admin/index.jsp");
         factoryBean.setUnauthorizedUrl("/unauthorized.jsp");
         factoryBean.setSecurityManager(securityManager);

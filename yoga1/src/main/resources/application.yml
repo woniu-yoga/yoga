@@ -19,7 +19,7 @@ spring:
 
 
   datasource:
-    url: jdbc:mysql://localhost:3306/yoga?characterEncoding=UTF8
+    url: jdbc:mysql://localhost:3306/yoga1?characterEncoding=UTF8
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
