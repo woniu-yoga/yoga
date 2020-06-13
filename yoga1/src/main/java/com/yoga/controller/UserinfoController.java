@@ -22,13 +22,15 @@ public class UserinfoController {
     @Resource
     private IMyFocusService myFocusService;
     @Resource
-    private IVenueOrderService iVenueOrderService;
+    private IVenueOrderService venueOrderService;
     @Resource
-    private IFriendReqService iFriendReqService;
+    private IFriendReqService friendReqService;
     @Resource
-    private ICoachOrderService iCoachOrderService;
+    private ICoachOrderService coachOrderService;
     @Resource
-    private IYogaCircleService iYogaCircleService;
+    private IYogaCircleService yogaCircleService;
+    @Resource
+    private IPurseService purseService;
 
     //获取所有我的好友信息
     @GetMapping("getFriends")
@@ -45,13 +47,13 @@ public class UserinfoController {
     //查询当前用户收到的好友申请
     @GetMapping("getFriendReqReceive")
     public List<FriendReq> getFriendReqReceive(Integer receiveuid){
-        return iFriendReqService.findByReceiveUid(receiveuid);
+        return friendReqService.findByReceiveUid(receiveuid);
     }
 
     //查询我发出的好友申请
     @GetMapping("getFriendReq")
     public List<FriendReq> getFriendReq(Integer requid){
-        return iFriendReqService.findByReqUid(requid);
+        return friendReqService.findByReqUid(requid);
     }
 
     //获取所有我关注的用户的信息
@@ -69,40 +71,44 @@ public class UserinfoController {
     //获取所有当前用户预定瑜伽场馆的订单
     @GetMapping("getMyVenueOrder")
     public List<VenueOrder> getMyVenueOrder(Integer uid){
-        return iVenueOrderService.findByPayUid(uid);
+        return venueOrderService.findByPayUid(uid);
     }
 
     //获取所有预定瑜伽教练的订单
     @GetMapping("getMyCoachOrder")
     public List<CoachOrder> getMyCoachOrder(Integer uid){
-        return iCoachOrderService.findByPayUid(uid);
+        return coachOrderService.findByPayUid(uid);
     }
 
     //查看好友的瑜乐圈状态(按时间排序)
- //报错报错
     @GetMapping("getYogaCircle")
     public List<YogaCircle> getYogaCircle(Integer circleuid){
-
-
-
-
-
-
         List<Userinfo> friends = myFriendService.getFriends(circleuid);
         List<Integer> uids = new ArrayList<>();
         for (Userinfo friend : friends) {
             uids.add(friend.getUid());
         }
-        List<YogaCircle> yogaCircles = iYogaCircleService.findYogaCircle(uids);
+        List<YogaCircle> yogaCircles = yogaCircleService.findYogaCircle(uids);
         return yogaCircles;
     }
 
     //查看我的瑜乐圈记录
     @GetMapping("getMyCircle")
     public List<YogaCircle> getMyCircle(Integer circleuid){
-        List<YogaCircle> myCircle = iYogaCircleService.findMyCircle(circleuid);
+        List<YogaCircle> myCircle = yogaCircleService.findMyCircle(circleuid);
         return myCircle;
     }
+
+    //我的钱包
+    @GetMapping("mypurse")
+    public Purse mypurse(Integer uid){
+        return purseService.findByUid(uid);
+    }
+
+    //查询转账记录
+
+
+
 
     //查看所有用户信息
     @GetMapping("findAll")

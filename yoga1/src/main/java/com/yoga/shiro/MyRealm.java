@@ -48,7 +48,6 @@ public class MyRealm extends AuthorizingRealm {
         }
 
         sai.addStringPermissions(permissions);
-
         return sai;
     }
 

@@ -3,7 +3,6 @@ package com.yoga.service.impl;
 import com.yoga.entity.Userinfo;
 import com.yoga.mapper.UserinfoMapper;
 import com.yoga.service.IUserinfoService;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

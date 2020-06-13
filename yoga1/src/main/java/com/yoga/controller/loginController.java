@@ -20,23 +20,23 @@ public class loginController {
     private IUserinfoService userinfoService;
     @PostMapping("/login")
     public String login(Userinfo info, ModelMap map) {
-        System.out.println(info.getUname()+"----"+info.getUpass());
+        System.out.println(info.getUname()+"----"+info.getUpass()+"----"+info.getCountryid());
         Subject currentUser = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(info.getUname(), info.getUpass());
         System.out.println(token);
         // token.setRememberMe(true);
         try {
             currentUser.login(token);
-            return "redirect:/admin/index.jsp";
+            return "";
         } catch (UnknownAccountException ae) {
             map.put("error","没有当前账户");
-            return "/index";
-        }catch (IncorrectCredentialsException ae) {
+            return "";
+        } catch (IncorrectCredentialsException ae) {
             map.put("error","密码不正确");
-            return "/index";
+            return "";
         } catch (Exception ae) {
             map.put("error","登录失败：" + ae);
-            return "/index";
+            return "";
         }
     }
     @RequestMapping("logout")

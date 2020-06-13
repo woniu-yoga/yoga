@@ -22,16 +22,16 @@ public class ShiroConfiguration {
     @Bean
     public ShiroFilterFactoryBean shiroFilterFactoryBean(SecurityManager securityManager){
         ShiroFilterFactoryBean factoryBean = new ShiroFilterFactoryBean();
-//        factoryBean.setLoginUrl("/index.jsp");
-        factoryBean.setSuccessUrl("/admin/index.jsp");
-        factoryBean.setUnauthorizedUrl("/unauthorized.jsp");
+        factoryBean.setLoginUrl("/index.html");
+        factoryBean.setSuccessUrl("/index.html");
+        factoryBean.setUnauthorizedUrl("/unauthorized.html");
         factoryBean.setSecurityManager(securityManager);
 
         Map map = new LinkedHashMap();
 
         map.put("/*", "anon");
         map.put("/login", "anon");
-        map.put("/index.jsp", "anon");
+        map.put("/index.html", "anon");
         map.put("/static/**", "anon");
         map.put("/css/**", "anon");
         map.put("/js/**", "anon");

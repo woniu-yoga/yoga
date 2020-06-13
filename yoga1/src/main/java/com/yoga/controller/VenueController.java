@@ -5,6 +5,7 @@ import com.yoga.entity.Venue;
 import com.yoga.service.IVenueService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -20,6 +21,7 @@ import java.util.Map;
  * @Version 1.0
  */
 @RestController
+@RequestMapping("/venue")
 public class VenueController {
     @Resource
     private IVenueService venueServiceImpl;
