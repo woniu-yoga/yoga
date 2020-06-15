@@ -94,5 +94,10 @@ public interface YogaCircleMapper {
      */
     int updateByPrimaryKey(YogaCircle record);
 
+    /**
+     * 查询所有好友的瑜乐圈信息
+     * @param uids
+     * @return
+     */
     List<YogaCircle> findYogaCircle(List<Integer> uids);
 }

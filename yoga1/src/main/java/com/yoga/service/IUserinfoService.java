@@ -28,4 +28,5 @@ public interface IUserinfoService {
     Userinfo loginin(String uname);
 
 
+    List<Userinfo> nearBy(Double lng , Double lat);
 }

@@ -13,6 +13,7 @@
     <result column="text" jdbcType="VARCHAR" property="text" />
     <result column="bak1" jdbcType="INTEGER" property="bak1" />
     <result column="bak2" jdbcType="INTEGER" property="bak2" />
+    <association property="userinfo" column="circle_uid" javaType="com.yoga.entity.Userinfo" select="com.yoga.mapper.UserinfoMapper.findByUid"></association>
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--

@@ -27,16 +27,16 @@ public class loginController {
         // token.setRememberMe(true);
         try {
             currentUser.login(token);
-            return "";
+            return "1";
         } catch (UnknownAccountException ae) {
             map.put("error","没有当前账户");
-            return "";
+            return "2";
         } catch (IncorrectCredentialsException ae) {
             map.put("error","密码不正确");
-            return "";
+            return "2";
         } catch (Exception ae) {
             map.put("error","登录失败：" + ae);
-            return "";
+            return "3";
         }
     }
     @RequestMapping("logout")

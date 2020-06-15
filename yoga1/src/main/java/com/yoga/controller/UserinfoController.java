@@ -82,8 +82,8 @@ public class UserinfoController {
 
     //查看好友的瑜乐圈状态(按时间排序)
     @GetMapping("getYogaCircle")
-    public List<YogaCircle> getYogaCircle(Integer circleuid){
-        List<Userinfo> friends = myFriendService.getFriends(circleuid);
+    public List<YogaCircle> getYogaCircle(Integer myid){
+        List<Userinfo> friends = myFriendService.getFriends(myid);
         List<Integer> uids = new ArrayList<>();
         for (Userinfo friend : friends) {
             uids.add(friend.getUid());
@@ -106,9 +106,16 @@ public class UserinfoController {
     }
 
     //查询转账记录
+    public List<PurseInOut> purseInOuts(){
 
+        return null;
+    }
 
-
+    //查询附近的人
+    @GetMapping("nearBy")
+    public List<Userinfo> nearBy(Double lng , Double lat){
+        return userinfoService.nearBy(lng ,lat);
+    }
 
     //查看所有用户信息
     @GetMapping("findAll")

@@ -43,5 +43,10 @@ public class UserinfoServiceImpl implements IUserinfoService {
         return userinfoMapper.loginin(uname);
     }
 
+    @Override
+    public List<Userinfo> nearBy(Double lng , Double lat) {
+        return userinfoMapper.nearBy(lng,lat);
+    }
+
 
 }
