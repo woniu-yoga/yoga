@@ -1,10 +1,9 @@
 package com.yoga.service.impl;
 
-import com.yoga.entity.Coach;
-import com.yoga.entity.JobsInfo;
-import com.yoga.entity.Venue;
+import com.yoga.entity.*;
 import com.yoga.mapper.CoachMapper;
 import com.yoga.mapper.JobsInfoMapper;
+import com.yoga.mapper.VenueCourseMapper;
 import com.yoga.mapper.VenueMapper;
 import com.yoga.service.IVenueService;
 import org.springframework.stereotype.Service;
@@ -29,14 +28,17 @@ public class VenueServiceImpl implements IVenueService {
     private JobsInfoMapper jobsInfoMapper;
     @Resource
     private CoachMapper coachMapper;
+    @Resource
+    private VenueCourseMapper venueCourseMapper;
+    //查询所有的场馆
     @Override
     public List<Venue> findAll() {
         return venueMapper.selectByExample(null);
     }
-
+    //查询一个场馆
     @Override
     public Venue findById(Integer id) {
-        return venueMapper.selectByPrimaryKey(id);
+        return venueMapper.findById(id);
     }
 
     @Override
@@ -80,7 +82,7 @@ public class VenueServiceImpl implements IVenueService {
     //查询场馆下的所有的招聘信息
     @Override
     public List<JobsInfo> findJobByVenue(Integer id) {
-        return null;
+        return jobsInfoMapper.findJobByVenue(id);
     }
 
 
@@ -88,5 +90,30 @@ public class VenueServiceImpl implements IVenueService {
     @Override
     public void deleteCoach(Integer id) {
         coachMapper.updateCoachById(id);
+    }
+
+    //添加场馆的课程
+    @Override
+    public void addCourseByVenue(VenueCourse venueCourse) {
+         venueCourseMapper.insert(venueCourse);
+    }
+    //删除单个场馆课程
+
+    @Override
+    public void deleteVenueById(Integer id) {
+        venueCourseMapper.deleteByPrimaryKey(id);
+    }
+    //修改场馆课程
+    @Override
+    public void updateVenue(VenueCourse venueCourse) {
+        venueCourseMapper.updateByPrimaryKey(venueCourse);
+    }
+    // 查询场馆自己的所有课程
+    @Override
+    public List<VenueCourse> findAllVenueCourse(Integer id) {
+        VenueCourseExample example = new VenueCourseExample();
+        VenueCourseExample.Criteria criteria =  example.createCriteria();
+        criteria.andVenueUidEqualTo(id);
+        return venueCourseMapper.selectByExample(example);
     }
 }

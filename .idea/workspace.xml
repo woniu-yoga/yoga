@@ -37,27 +37,71 @@
         <item name="GROUP_NODE:yoga1" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4d6733-ad55-4e31-959f-9d7adcdfc79a" name="Default Changelist" comment="场馆以及场馆拥有的功能的实现">
+    <list default="true" id="ed4d6733-ad55-4e31-959f-9d7adcdfc79a" name="Default Changelist" comment="省市区递归解决">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yoga1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/Yoga1Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/Yoga1Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/controller/UserinfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/controller/UserinfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/controller/VenueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/controller/VenueController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/controller/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/filter/MyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/filter/MyRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/Province.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/Province.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/Userinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/Userinfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/Venue.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/Venue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/Zone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/CityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/CityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/CountryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/CountryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/CountryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/CountryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/JobsInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/JobsInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/JobsInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/JobsInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/ProvinceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/ProvinceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/UserinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/UserinfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/VenueMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/VenueMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/VenueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/VenueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/ZoneMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/ZoneMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IUserinfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IUserinfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IVenueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IVenueService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/UserinfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/UserinfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/shiro/MyRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/shiro/MyRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/shiro/ShiroConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/shiro/ShiroConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/yoga1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/yoga1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/VenueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/VenueServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/Yoga1Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/Yoga1Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/UserinfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/UserinfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/VenueController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/VenueController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/loginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/loginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Province.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Province.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Userinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Userinfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Venue.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Venue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Zone.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Zone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/filter/MyRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/filter/MyRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CountryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CountryMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CountryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CountryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/JobsInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/JobsInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/JobsInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/JobsInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/ProvinceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/ProvinceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/UserinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/UserinfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VenueMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VenueMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VenueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VenueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/ZoneMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/ZoneMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IUserinfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IUserinfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IVenueService.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IVenueService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/UserinfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/UserinfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/VenueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/VenueServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/shiro/MyRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/shiro/MyRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/shiro/ShiroConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/shiro/ShiroConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/yoga1.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +118,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>WebSocketServer</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -115,11 +154,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591859580063" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/yoga1/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.24812734" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -128,7 +173,6 @@
       <recent name="com.yoga.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IDEA\workspace\yoga\yoga1\src\main\webapp" />
       <recent name="G:\ideaproject2\yoga\yoga1\src\main\java\com\yoga\entity" />
       <recent name="G:\ideaproject2\yoga\yoga1\src\main\java\com\yoga\mapper" />
       <recent name="G:\ideaproject2\yoga\yoga1\src\main\java\com\yoga\service\impl" />
@@ -146,9 +190,6 @@
     <configuration name="Yoga1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="yoga1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yoga.Yoga1Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,10 +222,10 @@
       <workItem from="1591707023944" duration="674000" />
       <workItem from="1591749672761" duration="14802000" />
       <workItem from="1591857613974" duration="718000" />
-      <workItem from="1591873459723" duration="5310000" />
-      <workItem from="1591882506723" duration="3270000" />
-      <workItem from="1591925474612" duration="9230000" />
-      <workItem from="1592012399824" duration="1438000" />
+      <workItem from="1592183956915" duration="1014000" />
+      <workItem from="1592202220255" duration="17131000" />
+      <workItem from="1592269797562" duration="489000" />
+      <workItem from="1592270369254" duration="5494000" />
     </task>
     <task id="LOCAL-00001" summary="userinfo service">
       <created>1591670595893</created>
@@ -225,19 +266,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -262,86 +291,98 @@
     <MESSAGE value="userinfo service" />
     <MESSAGE value="mybatis逆向" />
     <MESSAGE value="场馆以及场馆拥有的功能的实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="场馆以及场馆拥有的功能的实现" />
+    <MESSAGE value="省市区递归解决" />
+    <option name="LAST_COMMIT_MESSAGE" value="省市区递归解决" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="561" y="224" key="#Notifications" timestamp="1591941777294">
+    <state x="137" y="18" width="1207" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591705221688">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="561" y="224" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1591941777294" />
-    <state x="137" y="18" width="1207" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591885436177">
+    <state x="137" y="18" width="1207" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591705221688" />
+    <state x="549" y="76" key="#com.intellij.ide.util.MemberChooser" timestamp="1592207870039">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="488" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1591666893979" />
+    <state x="549" y="76" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1592207870039" />
+    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1592277104861">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592277104861" />
+    <state x="463" y="49" key="FileChooserDialogImpl" timestamp="1591638147063">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="18" width="1207" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591885436177" />
-    <state x="488" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1591945907191">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="463" y="49" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591638147063" />
+    <state width="1197" height="308" key="GridCell.Tab.0.bottom" timestamp="1592277085083">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="488" y="67" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1591945907191" />
-    <state x="463" y="49" key="FileChooserDialogImpl" timestamp="1591884875535">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1322" height="99" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591705474204" />
+    <state width="1197" height="308" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592277085083" />
+    <state width="1197" height="308" key="GridCell.Tab.0.center" timestamp="1592277085083">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="49" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591884875535" />
-    <state width="496" height="90" key="GridCell.Tab.0.bottom" timestamp="1591956128908">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1322" height="99" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591705474204" />
+    <state width="1197" height="308" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592277085083" />
+    <state width="1197" height="308" key="GridCell.Tab.0.left" timestamp="1592277085082">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="496" height="90" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591956128908" />
-    <state width="584" height="255" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="496" height="90" key="GridCell.Tab.0.center" timestamp="1591956128908">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1322" height="99" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591705474204" />
+    <state width="1197" height="308" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592277085082" />
+    <state width="1197" height="308" key="GridCell.Tab.0.right" timestamp="1592277085083">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="496" height="90" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591956128908" />
-    <state width="584" height="255" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="496" height="90" key="GridCell.Tab.0.left" timestamp="1591956128908">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1322" height="99" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591705474204" />
+    <state width="1197" height="308" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592277085083" />
+    <state width="1197" height="308" key="GridCell.Tab.1.bottom" timestamp="1592277085084">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="496" height="90" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591956128908" />
-    <state width="584" height="255" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="496" height="90" key="GridCell.Tab.0.right" timestamp="1591956128908">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1322" height="88" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591701049746" />
+    <state width="1197" height="308" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592277085084" />
+    <state width="1197" height="308" key="GridCell.Tab.1.center" timestamp="1592277085084">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="496" height="90" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591956128908" />
-    <state width="584" height="255" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="496" height="90" key="GridCell.Tab.1.bottom" timestamp="1591956128908">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1322" height="88" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591701049744" />
+    <state width="1197" height="308" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1592277085084" />
+    <state width="1197" height="308" key="GridCell.Tab.1.left" timestamp="1592277085083">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="496" height="90" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591956128908" />
-    <state width="584" height="255" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="496" height="90" key="GridCell.Tab.1.center" timestamp="1591956128908">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1322" height="88" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591701049744" />
+    <state width="1197" height="308" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1592277085083" />
+    <state width="1197" height="308" key="GridCell.Tab.1.right" timestamp="1592277085084">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="496" height="90" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591956128908" />
-    <state width="584" height="255" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="496" height="90" key="GridCell.Tab.1.left" timestamp="1591956128908">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1322" height="88" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591701049745" />
+    <state width="1197" height="308" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1592277085084" />
+    <state x="349" y="146" key="IDE.errors.dialog" timestamp="1592270925910">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="496" height="90" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591956128908" />
-    <state width="584" height="255" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="496" height="90" key="GridCell.Tab.1.right" timestamp="1591956128908">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="496" height="90" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591956128908" />
-    <state width="584" height="255" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
+    <state x="349" y="146" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1592270925910" />
     <state x="306" y="65" key="NewModule_or_Project.wizard" timestamp="1591638150102">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="306" y="65" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1591638150102" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1592012621683">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="183" y="0" key="SettingsEditor" timestamp="1592271034616">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592012621683" />
-    <state x="309" y="109" key="Vcs.Push.Dialog.v2" timestamp="1591864816990">
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591705462979" />
+    <state x="183" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592271034616" />
+    <state x="309" y="109" key="Vcs.Push.Dialog.v2" timestamp="1592271138414">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591701384061" />
-    <state x="309" y="109" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591864816990" />
+    <state x="309" y="109" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592271138414" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1592147691682">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1592147691682" />
     <state x="516" y="168" key="git4idea.merge.GitMergeDialog" timestamp="1591864852206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="459" y="148" key="git4idea.merge.GitMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1591682575248" />
     <state x="516" y="168" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1591864852206" />
-    <state x="381" y="148" key="git4idea.merge.GitPullDialog" timestamp="1591700613807">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="428" y="168" key="git4idea.merge.GitPullDialog" timestamp="1592205519528">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="381" y="148" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1591700613807" />
+    <state x="428" y="168" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1592205519528" />
   </component>
 </project>

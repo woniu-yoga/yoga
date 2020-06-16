@@ -43,5 +43,10 @@ public class UserinfoServiceImpl implements IUserinfoService {
         return userinfoMapper.loginin(uname);
     }
 
+    @Override
+    public void insert(Userinfo info) {
+        userinfoMapper.insert(info);
+    }
+
 
 }

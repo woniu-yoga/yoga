@@ -13,13 +13,14 @@ spring:
 
 
   mvc:
-    view:
-      prefix: /
-      suffix: .html
-
+    format:
+      date-time: yyyy-MM-dd HH:mm:ss
 
   datasource:
     url: jdbc:mysql://localhost:3306/yoga1?characterEncoding=UTF8
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8

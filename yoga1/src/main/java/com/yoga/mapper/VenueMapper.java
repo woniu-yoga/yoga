@@ -141,4 +141,6 @@ public interface VenueMapper {
 >>>>>>> 3113bc6... 场馆
      */
     int updateByPrimaryKey(Venue record);
+
+    Venue findById(Integer id);
 }

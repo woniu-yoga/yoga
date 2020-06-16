@@ -9,9 +9,15 @@
     -->
     <id column="countryid" jdbcType="VARCHAR" property="countryid" />
     <result column="countryname" jdbcType="VARCHAR" property="countryname" />
+
+  </resultMap>
+  <resultMap id="CountryResultmap" type="com.yoga.entity.Country" extends="BaseResultMap">
     <collection property="provinces" column="countryid" select="com.yoga.mapper.ProvinceMapper.findByCountryid">
     </collection>
   </resultMap>
+  <select id="FindAllCountry"  resultMap="CountryResultmap">
+    select * from country
+  </select>
   <sql id="Example_Where_Clause">
     <!--
       WARNING - @mbg.generated

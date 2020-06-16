@@ -40,11 +40,14 @@
     <result column="bak1" jdbcType="BIT" property="bak1" />
     <result column="bak2" jdbcType="VARCHAR" property="bak2" />
     <result column="bak3" jdbcType="VARCHAR" property="bak3" />
+    <association property="zone" column="zid" select="com.yoga.mapper.ZoneMapper.selectByPrimaryKey"></association>
   </resultMap>
   <resultMap id="BaseResultMapWithRole" type="com.yoga.entity.Userinfo" extends="BaseResultMap">
+
     <collection property="roles" column="userid" select="com.yoga.mapper.RoleMapper.findByUid"></collection>
   </resultMap>
   <resultMap id="BaseResultMapWithRoleTree" type="com.yoga.entity.Userinfo" extends="BaseResultMapWithRole">
+
     <collection property="trees" column="userid" select="com.yoga.mapper.TreeMapper.findByUid"></collection>
   </resultMap>
   <select id="loginin" resultMap="BaseResultMapWithRoleTree" >

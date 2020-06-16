@@ -21,6 +21,7 @@
     <result column="bak1" jdbcType="INTEGER" property="bak1" />
     <result column="bak2" jdbcType="VARCHAR" property="bak2" />
   </resultMap>
+
   <sql id="Example_Where_Clause">
     <!--
       WARNING - @mbg.generated
@@ -407,6 +408,9 @@
   </update>
 
   <!--自定义的sql-->
+  <select id="findJobByVenue" parameterType="Integer" resultMap="BaseResultMap">
+    select * from jobs_info jobsinfo where  venue_uid  = #{id}
+  </select>
   <update id="updateId">
     update jobs_info
     <set>

@@ -3,6 +3,7 @@ package com.yoga.service;
 import com.yoga.entity.Coach;
 import com.yoga.entity.JobsInfo;
 import com.yoga.entity.Venue;
+import com.yoga.entity.VenueCourse;
 
 import java.util.List;
 
@@ -28,5 +29,13 @@ public interface IVenueService {
     List<JobsInfo> findJobByVenue(Integer id);
     //解雇教练
     void deleteCoach(Integer id);
+    //添加场馆课程信息
+    void addCourseByVenue(VenueCourse venueCourse);
+    //删除单个场馆课程
+    void deleteVenueById(Integer id);
+    //修改课程信息
+    void updateVenue(VenueCourse venueCourse);
+    //查询所有的场馆信息
+    List<VenueCourse>  findAllVenueCourse(Integer id);
 
 }

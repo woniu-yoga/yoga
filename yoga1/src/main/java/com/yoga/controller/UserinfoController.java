@@ -1,10 +1,15 @@
 package com.yoga.controller;
 
 import com.yoga.entity.*;
+import com.yoga.mapper.CityMapper;
+import com.yoga.mapper.CountryMapper;
+import com.yoga.mapper.ProvinceMapper;
+import com.yoga.mapper.ZoneMapper;
 import com.yoga.service.*;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,6 +36,11 @@ public class UserinfoController {
     private IYogaCircleService yogaCircleService;
     @Resource
     private IPurseService purseService;
+
+
+    public UserinfoController() {
+
+    }
 
     //获取所有我的好友信息
     @GetMapping("getFriends")
@@ -117,9 +127,14 @@ public class UserinfoController {
     }
 
     //根据ID查看用户信息
+
     @GetMapping("findById")
     public Userinfo findById(Integer uid){
-        return userinfoService.findById(uid);
+
+        Userinfo info = userinfoService.findById(uid);
+
+        System.out.println("用户信息------------设置完省市区的info:" + info);
+        return info;
     }
 
     //新增用户信息
