@@ -10,11 +10,13 @@
     <id column="roleid" jdbcType="INTEGER" property="roleid" />
     <result column="rolename" jdbcType="VARCHAR" property="rolename" />
   </resultMap>
+
   <select id="findByUid" resultMap="BaseResultMap" parameterType="int">
     select * from role where roleid in (
-    select roleid from userinforole where uid=#{uid}
+        select roleid from userinforole where uid=#{uid}
     )
   </select>
+
   <sql id="Example_Where_Clause">
     <!--
       WARNING - @mbg.generated
