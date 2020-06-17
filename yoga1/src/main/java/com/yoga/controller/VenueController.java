@@ -132,10 +132,11 @@ public class VenueController {
         }
         return map;
     }
+
     //场馆添加自己的课程
     @PostMapping("/AddCourseByVenue")
     public Map<String,Object> AddCourseByVenue(Integer uid){
-        System.out.println("findJobByVenue------" + uid);
+
         Map<String,Object> map = new HashMap<>();
 
         try {

@@ -93,4 +93,6 @@ public interface VenueCourseMapper {
      * @mbg.generated Tue Jun 09 19:11:09 GMT+08:00 2020
      */
     int updateByPrimaryKey(VenueCourse record);
+
+    void deleteById(Integer id);
 }

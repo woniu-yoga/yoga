@@ -476,4 +476,20 @@
       bak4 = #{bak4,jdbcType=VARCHAR}
     where uid = #{uid,jdbcType=INTEGER}
   </update>
+  <!--自定义的sql-->
+  <!--场馆的伪删除-->
+  <update id="deleteById">
+    update venue
+    <set>
+      <if test="bak1 == 1">
+        bak1 = 0,
+      </if>
+      <if test="bak1 == 0">
+        bak1 = 1,
+      </if>
+    </set>
+    <where>
+      uid = #{id}
+    </where>
+  </update>
 </mapper>

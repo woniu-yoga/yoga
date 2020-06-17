@@ -26,45 +26,43 @@ import java.util.UUID;
  */
 //@CrossOrigin
 @RestController
-
 public class UploadController2 {
     //上传文件
-    @PostMapping("/upload")
-    public String uploadWork(HttpServletRequest request,@RequestParam(value = "file", required = false) MultipartFile file) throws IOException {
-
-        request.setCharacterEncoding("UTF-8");
-        String user = request.getParameter("user");
-
-        if(!file.isEmpty()) {
-            String fileName = file.getOriginalFilename();
-            String path = null;
-            String type = fileName.indexOf(".") != -1 ? fileName.substring(fileName.lastIndexOf(".") + 1, fileName.length()) : null;
-            if (type != null) {
-                if ("DOCX".equals(type.toUpperCase())||"DOC".equals(type.toUpperCase())) {
-                    // 项目在容器中实际发布运行的根路径
-                    String realPath = request.getSession().getServletContext().getRealPath("/");
-                    // 自定义的文件名称
-                    String trueFileName = user + "_" + fileName;
-
-                    // 设置存放图片文件的路径
-                    path = "/workplace/classwork/" + trueFileName;
-                    File dest = new File(path);
-                    //判断文件父目录是否存在
-                    if (!dest.getParentFile().exists()) {
-                        dest.getParentFile().mkdir();
-                    }
-
-                    file.transferTo(dest);
-
-                    return trueFileName;
-                }else {
-                    return "error";
-                }
-            }else {
-                return "error";
-            }
-        }else {
-            return "error";
+    @PostMapping("/import")
+    public void save(@RequestParam(value="file",required=false) MultipartFile multipartFile,HttpServletRequest request){
+        //获得上传文件的名字
+        //getOriginalFilename()可以获得文件的名字
+        String fileName = multipartFile.getOriginalFilename();
+        System.out.println("****" + fileName);
+        //获得上传文件的后缀
+        String suffix = fileName.substring(fileName.lastIndexOf("."));
+        //通过request获得"/"项目发布位置的绝对路径
+        //声明文件保存的位置
+//        String realPath = request.getServletContext().getRealPath("/upload");
+//        System.out.println(realPath);
+        String filePath = System.getProperty("user.dir") + "\\yoga1\\src\\main\\resources\\static\\imgs\\";
+//        String realPath = "C:\\Users\\26053\\Desktop\\gdj\\images";
+        //获得项目发布后保存上传文件目录的File对象
+        File file = new File(filePath);
+        //file.exists()判断File对象是否存在
+        if (file.exists()) {
+            //不存在则创建
+            file.mkdirs();
         }
+        //声明一个新的文件名（不重复）
+        //文件名不重复 00847636-5c86-4202-a8b9-8b340a0875c4.png
+        //可以使用当前时间的毫秒数，将本方法变成线程安全的。
+        String newFileName = UUID.randomUUID()+suffix;
+        //声明一个新的文件(上传文件的目标对象)
+        File target = new File(file,newFileName);
+        try {
+            //将上传的临时文件写入指定位置
+            multipartFile.transferTo(target);
+        } catch (Exception  e) {
+            // TODO Auto-generated catch block
+
+        }
+
     }
+
 }

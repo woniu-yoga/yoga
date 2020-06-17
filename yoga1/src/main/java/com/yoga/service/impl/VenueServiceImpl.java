@@ -45,10 +45,10 @@ public class VenueServiceImpl implements IVenueService {
     public void save(Venue venue) {
         venueMapper.insert(venue);
     }
-
+    //场馆的伪删除
     @Override
     public void deleteById(Integer id) {
-        venueMapper.deleteByPrimaryKey(id);
+        venueMapper.deleteById(id);
     }
 
     @Override
@@ -91,6 +91,12 @@ public class VenueServiceImpl implements IVenueService {
     public void deleteCoach(Integer id) {
         coachMapper.updateCoachById(id);
     }
+    //签约教练
+    @Override
+    public void addCoach(Coach coach) {
+
+
+    }
 
     //添加场馆的课程
     @Override
@@ -101,7 +107,7 @@ public class VenueServiceImpl implements IVenueService {
 
     @Override
     public void deleteVenueById(Integer id) {
-        venueCourseMapper.deleteByPrimaryKey(id);
+        venueCourseMapper.deleteById(id);
     }
     //修改场馆课程
     @Override
@@ -116,4 +122,5 @@ public class VenueServiceImpl implements IVenueService {
         criteria.andVenueUidEqualTo(id);
         return venueCourseMapper.selectByExample(example);
     }
+
 }

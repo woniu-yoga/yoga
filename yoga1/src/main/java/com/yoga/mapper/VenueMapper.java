@@ -143,4 +143,6 @@ public interface VenueMapper {
     int updateByPrimaryKey(Venue record);
 
     Venue findById(Integer id);
+
+    void deleteById(Integer id);
 }
