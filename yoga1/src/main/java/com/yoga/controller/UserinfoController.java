@@ -36,6 +36,8 @@ public class UserinfoController {
     private IYogaCircleService yogaCircleService;
     @Resource
     private IPurseService purseService;
+    @Resource
+    private IPurseInOutService purseInOutService;
 
 
     public UserinfoController() {
@@ -116,9 +118,11 @@ public class UserinfoController {
     }
 
     //查询转账记录
-    public List<PurseInOut> purseInOuts(){
-
-        return null;
+    @GetMapping("purseInOuts")
+    public List<PurseInOut> purseInOuts(Integer uid){
+        Purse mypurse = purseService.findByUid(uid);
+        List<PurseInOut> inOuts = purseInOutService.findByPurseId(mypurse.getPurseid());
+        return inOuts;
     }
 
 
