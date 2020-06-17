@@ -140,4 +140,6 @@ public interface JobsInfoMapper {
     int updateByPrimaryKey(JobsInfo record);
 
     void updateId(Integer id);
+
+    List<JobsInfo> findJobByVenue(Integer id);
 }

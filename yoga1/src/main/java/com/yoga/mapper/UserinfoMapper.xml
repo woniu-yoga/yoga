@@ -40,45 +40,19 @@
     <result column="bak1" jdbcType="BIT" property="bak1" />
     <result column="bak2" jdbcType="VARCHAR" property="bak2" />
     <result column="bak3" jdbcType="VARCHAR" property="bak3" />
+    <association property="zone" column="zid" select="com.yoga.mapper.ZoneMapper.selectByPrimaryKey"></association>
   </resultMap>
   <resultMap id="BaseResultMapWithRole" type="com.yoga.entity.Userinfo" extends="BaseResultMap">
-    <collection property="roles" column="uid" select="com.yoga.mapper.RoleMapper.findByUid"></collection>
+
+    <collection property="roles" column="userid" select="com.yoga.mapper.RoleMapper.findByUid"></collection>
   </resultMap>
   <resultMap id="BaseResultMapWithRoleTree" type="com.yoga.entity.Userinfo" extends="BaseResultMapWithRole">
-    <collection property="trees" column="uid" select="com.yoga.mapper.TreeMapper.findByUid"></collection>
+
+    <collection property="trees" column="userid" select="com.yoga.mapper.TreeMapper.findByUid"></collection>
   </resultMap>
   <select id="loginin" resultMap="BaseResultMapWithRoleTree" >
     select * from userinfo where uname=#{uname}
   </select>
-  <select id="nearBy" resultMap="BaseResultMapWithRole" parameterType="java.lang.Double">
-
-    SELECT
-    *,(
-    6371 * acos (
-    cos ( radians(#{lat}) )
-    * cos( radians( lat ) )
-    * cos( radians( lng ) - radians(#{lng}) )
-    + sin ( radians(#{lat}) )
-    * sin( radians( lat ) )
-    )
-    ) AS distance
---      //距离
-    FROM userinfo
---     HAVING distance > 0
---     //筛选距离小于2km的商家(可不写)，如果没查到数据就是没有小于2km的商家
-    ORDER BY distance
---     //根据距离远近来排序 默认升序 （可不写）
-    LIMIT 0 , 20;
---      //显示前20条数据（可不写）
-
-  </select>
-
-  <select id="findByUid" resultMap="BaseResultMapWithRole" parameterType="java.lang.Integer">
-
-    select * from userinfo where uid = #{uid}
-
-  </select>
-
   <sql id="Example_Where_Clause">
     <!--
       WARNING - @mbg.generated

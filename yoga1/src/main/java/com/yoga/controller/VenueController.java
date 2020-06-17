@@ -1,6 +1,7 @@
 package com.yoga.controller;
 
 import com.yoga.entity.Coach;
+import com.yoga.entity.JobsInfo;
 import com.yoga.entity.Venue;
 import com.yoga.service.IVenueService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,6 +34,7 @@ public class VenueController {
         try {
             List<Venue> venues = venueServiceImpl.findAll();
             System.out.println("venues------------" + venues);
+            System.out.println(121);
             map.put("message",true);
             map.put("venues",venues);
         } catch (Exception e) {
@@ -43,13 +45,14 @@ public class VenueController {
     }
     //根据id查询场馆
     @GetMapping("/findOne")
-    public Map<String,Object> findOne(Integer id){
+    public Map<String,Object> findOne(Integer uid){
+        System.out.println("查询的场馆的id------" + uid);
         Map<String,Object> map = new HashMap<>();
 
         try {
-            Venue venue = venueServiceImpl.findById(id);
+            Venue venue = venueServiceImpl.findById(uid);
             map.put("message",true);
-            map.put("infos",venue);
+            map.put("venue",venue);
         } catch (Exception e) {
             map.put("message",false);
             e.printStackTrace();
@@ -58,11 +61,11 @@ public class VenueController {
     }
     //根据id删除场馆
     @GetMapping("/deleteById")
-    public Map<String,Object> deleteById(Integer id){
+    public Map<String,Object> deleteById(Integer uid){
         Map<String,Object> map = new HashMap<>();
 
         try {
-            venueServiceImpl.deleteById(id);
+            venueServiceImpl.deleteById(uid);
             map.put("message",true);
         } catch (Exception e) {
             map.put("message",false);
@@ -100,11 +103,11 @@ public class VenueController {
     }
 
     //根据场馆查询场馆下的教练
-    public Map<String,Object> findCoachByVenue(Integer id){
+    public Map<String,Object> findCoachByVenue(Integer uid){
         Map<String,Object> map = new HashMap<>();
 
         try {
-            List<Coach> coaches = venueServiceImpl.findCoachByVenue(id);
+            List<Coach> coaches = venueServiceImpl.findCoachByVenue(uid);
             map.put("message",true);
             map.put("coaches",coaches);
         } catch (Exception e) {
@@ -113,5 +116,37 @@ public class VenueController {
         }
         return map;
     }
+    //根据场馆查看场馆下的招聘信息
+    @GetMapping("/findJobByVenue")
+    public Map<String,Object> findJobByVenue(Integer uid){
+        System.out.println("findJobByVenue------" + uid);
+        Map<String,Object> map = new HashMap<>();
 
+        try {
+            List<JobsInfo> jobsInfos = venueServiceImpl.findJobByVenue(uid);
+            map.put("message",true);
+            map.put("jobsInfos",jobsInfos);
+        } catch (Exception e) {
+            map.put("message",false);
+            e.printStackTrace();
+        }
+        return map;
+    }
+
+    //场馆添加自己的课程
+    @PostMapping("/AddCourseByVenue")
+    public Map<String,Object> AddCourseByVenue(Integer uid){
+
+        Map<String,Object> map = new HashMap<>();
+
+        try {
+            List<JobsInfo> jobsInfos = venueServiceImpl.findJobByVenue(uid);
+            map.put("message",true);
+            map.put("jobsInfos",jobsInfos);
+        } catch (Exception e) {
+            map.put("message",false);
+            e.printStackTrace();
+        }
+        return map;
+    }
 }

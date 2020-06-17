@@ -93,4 +93,6 @@ public interface CountryMapper {
      * @mbg.generated Tue Jun 09 20:15:58 GMT+08:00 2020
      */
     int updateByPrimaryKey(Country record);
+
+    List FindAllCountry();
 }

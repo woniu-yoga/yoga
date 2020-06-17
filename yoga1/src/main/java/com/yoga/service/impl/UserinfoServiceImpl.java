@@ -44,8 +44,8 @@ public class UserinfoServiceImpl implements IUserinfoService {
     }
 
     @Override
-    public List<Userinfo> nearBy(Double lng , Double lat) {
-        return userinfoMapper.nearBy(lng,lat);
+    public void insert(Userinfo info) {
+        userinfoMapper.insert(info);
     }
 
 

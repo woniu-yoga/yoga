@@ -23,6 +23,9 @@
     <result column="bak2" jdbcType="INTEGER" property="bak2" />
     <result column="bak3" jdbcType="VARCHAR" property="bak3" />
     <result column="bak4" jdbcType="VARCHAR" property="bak4" />
+    <association property="userinfo" column="uid"
+                 select="com.yoga.mapper.UserinfoMapper.selectByPrimaryKey">
+    </association>
     <collection property="coachs" ofType="com.yoga.entity.Coach">
       <id column="uid" property="uid"></id>
       <result property="isreceive" column="isreceive"></result>
@@ -36,6 +39,11 @@
       <result property="photo" column="photo"></result>
     </collection>
   </resultMap>
+
+  <!--查询单个场馆信息-->
+  <select id="findById" resultMap="BaseResultMap">
+    select * from userinfo u join venue v on u.uid = v.uid  where v.uid = #{id}
+  </select>
   <!--根据场馆查看场馆拥有的教练-->
   <select id="findCoachByVenue" resultMap="BaseResultMap">
     select * from coach where #{uid} in (select venueid from venue_coach where coachid in(select uid from coach )  )
