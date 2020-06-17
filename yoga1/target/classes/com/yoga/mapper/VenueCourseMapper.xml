@@ -393,4 +393,21 @@
       bak3 = #{bak3,jdbcType=VARCHAR}
     where courseid = #{courseid,jdbcType=INTEGER}
   </update>
+
+  <!--自定义的sql-->
+  <!--场馆课程的伪删除-->
+  <update id="deleteById">
+    update venue_course
+    <set>
+      <if test="bak1 == 1">
+        bak1 = 0,
+      </if>
+      <if test="bak1 == 0">
+        bak1 = 1,
+      </if>
+    </set>
+    <where>
+      courseid = #{id}
+    </where>
+  </update>
 </mapper>
