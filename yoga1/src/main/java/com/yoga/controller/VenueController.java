@@ -3,6 +3,7 @@ package com.yoga.controller;
 import com.yoga.entity.Coach;
 import com.yoga.entity.JobsInfo;
 import com.yoga.entity.Venue;
+import com.yoga.entity.VenueCourse;
 import com.yoga.service.IVenueService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -143,6 +144,54 @@ public class VenueController {
             List<JobsInfo> jobsInfos = venueServiceImpl.findJobByVenue(uid);
             map.put("message",true);
             map.put("jobsInfos",jobsInfos);
+        } catch (Exception e) {
+            map.put("message",false);
+            e.printStackTrace();
+        }
+        return map;
+    }
+    //删除单个场馆课程
+    @GetMapping("/deleteCourseById")
+    public Map<String,Object> deleteCourseById(Integer uid){
+
+        Map<String,Object> map = new HashMap<>();
+
+        try {
+            venueServiceImpl.deleteById(uid);
+            map.put("message",true);
+
+        } catch (Exception e) {
+            map.put("message",false);
+            e.printStackTrace();
+        }
+        return map;
+    }
+    //修改课程信息
+    @PostMapping("/updateCourse")
+    public Map<String,Object> updateCourse(VenueCourse venueCourse){
+
+        Map<String,Object> map = new HashMap<>();
+
+        try {
+            venueServiceImpl.updateVenue(venueCourse);
+            map.put("message",true);
+
+        } catch (Exception e) {
+            map.put("message",false);
+            e.printStackTrace();
+        }
+        return map;
+    }
+    //查询场馆所有的课程
+    @GetMapping("/findAllVenueCourse")
+    public Map<String,Object> findAllVenueCourse(Integer venueuid){
+
+        Map<String,Object> map = new HashMap<>();
+
+        try {
+            List<VenueCourse> venueCourses = venueServiceImpl.findAllVenueCourse(venueuid);
+            map.put("message",true);
+            map.put("venueCourses",venueCourses);
         } catch (Exception e) {
             map.put("message",false);
             e.printStackTrace();
