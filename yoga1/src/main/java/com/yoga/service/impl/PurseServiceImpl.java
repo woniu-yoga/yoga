@@ -27,6 +27,6 @@ public class PurseServiceImpl implements IPurseService {
         PurseExample.Criteria criteria = example.createCriteria();
         criteria.andUidEqualTo(uid);
         List<Purse> purses = purseMapper.selectByExample(example);
-        return purses.size()!=0?purses.get(0):null;
+        return purses.size()==0?null:purses.get(0);
     }
 }
