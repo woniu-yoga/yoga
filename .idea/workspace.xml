@@ -40,16 +40,252 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed4d6733-ad55-4e31-959f-9d7adcdfc79a" name="Default Changelist" comment="03--bai">
+    <list default="true" id="ed4d6733-ad55-4e31-959f-9d7adcdfc79a" name="Default Changelist" comment="61801--bai">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/controller/UserinfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/controller/UserinfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/FriendReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/entity/FriendReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/FriendReqMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/mapper/FriendReqMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IMyFocusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IMyFocusService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/MyFocusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/impl/MyFocusServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/UserinfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/UserinfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IMyFocusService.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IMyFocusService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/MyFocusServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/MyFocusServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IPurseInOutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/src/main/java/com/yoga/service/IPurseInOutService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/Yoga1Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/ChatConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/ChatController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/UserinfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/VenueController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/adminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/controller/loginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CityExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CityExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CityExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CityExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Coach.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachCourse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachCourseExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachCourseExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachCourseExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachCourseExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachOrderExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachOrderExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachOrderExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachOrderExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachVenuePj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachVenuePjExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachVenuePjExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachVenuePjExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CoachVenuePjExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CommentExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CommentExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CommentExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CommentExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CountryExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CountryExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CountryExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/CountryExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Flowtype.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/FlowtypeExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/FlowtypeExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/FlowtypeExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/FlowtypeExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/FriendReq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/FriendReqExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/FriendReqExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/FriendReqExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/FriendReqExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/HomeShow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/HomeShowExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/HomeShowExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/HomeShowExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/HomeShowExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/InOutType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/InOutTypeExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/InOutTypeExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/InOutTypeExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/InOutTypeExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/JobsInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/JobsInfoExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/JobsInfoExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/JobsInfoExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/JobsInfoExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/MyFocus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/MyFocusExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/MyFocusExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/MyFocusExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/MyFocusExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/MyFocusKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Myfriend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/MyfriendExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/MyfriendExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/MyfriendExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/MyfriendExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/MyfriendKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Province.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/ProvinceExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/ProvinceExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/ProvinceExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/ProvinceExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Purse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/PurseExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/PurseExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/PurseExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/PurseExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/PurseInOut.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/PurseInOutExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/PurseInOutExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/PurseInOutExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/PurseInOutExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/RoleExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/RoleExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/RoleExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/RoleExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/RoletreeExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/RoletreeExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/RoletreeExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/RoletreeExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/RoletreeKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/TreeExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/TreeExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/TreeExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/TreeExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Userinfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/UserinfoExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/UserinfoExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/UserinfoExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/UserinfoExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/UserinforoleExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/UserinforoleExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/UserinforoleExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/UserinforoleExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/UserinforoleKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Venue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueCoachExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueCoachExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueCoachExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueCoachExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueCoachKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueCourse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueCourseExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueCourseExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueCourseExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueCourseExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueOrderExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueOrderExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueOrderExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VenueOrderExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Video.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VideoExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VideoExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VideoExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VideoExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VideoType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VideoTypeExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VideoTypeExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VideoTypeExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VideoTypeExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Vip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipDetailExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipDetailExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipDetailExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipDetailExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipGrade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipGradeExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipGradeExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipGradeExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipGradeExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipTypeExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipTypeExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipTypeExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/VipTypeExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/YogaCircle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/YogaCircleExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/YogaCircleExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/YogaCircleExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/YogaCircleExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Zan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/ZanExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/ZanExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/ZanExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/ZanExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/Zone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/ZoneExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/ZoneExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/ZoneExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/entity/ZoneExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/filter/MyFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/filter/MyRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CityMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CoachCourseMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CoachMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CoachOrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CoachVenuePjMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CommentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/CountryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/FlowtypeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/FriendReqMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/HomeShowMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/InOutTypeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/JobsInfoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/MyFocusMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/MyfriendMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/ProvinceMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/PurseInOutMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/PurseMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/RoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/RoletreeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/TreeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/UserinfoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/UserinforoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VenueCoachMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VenueCourseMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VenueMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VenueOrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VideoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VideoTypeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VipDetailMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VipGradeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VipMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/VipTypeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/YogaCircleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/ZanMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/mapper/ZoneMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/ICoachOrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IFriendReqService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IMyFocusService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IMyFriendService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IUserinfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IVenueOrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IVenueService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/IYogaCircleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/CoachOrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/FriendReqServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/MyFocusServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/MyFriendServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/UserinfoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/VenueOrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/VenueServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/YogaCircleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/impl/treeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/service/treeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/shiro/MyRealm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/shiro/ShiroConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/target/classes/com/yoga/tools/CorsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga1/yoga1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yoga1/yoga1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +354,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.24812734" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="settings.editor.selected.configurable" value="settings.gitee" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -189,6 +425,7 @@
       <workItem from="1592270118558" duration="421000" />
       <workItem from="1592394725515" duration="2668000" />
       <workItem from="1592404061600" duration="4380000" />
+      <workItem from="1592443608908" duration="2630000" />
     </task>
     <task id="LOCAL-00001" summary="userinfo service">
       <created>1591670595893</created>
@@ -246,7 +483,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592397374944</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="03--bai">
+      <created>1592443815103</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592443815103</updated>
+    </task>
+    <task id="LOCAL-00010" summary="61801--bai">
+      <created>1592460601581</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1592460601581</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +553,8 @@
     <MESSAGE value="查看附近的教练、场馆、瑜伽广场--bai" />
     <MESSAGE value="02--bai" />
     <MESSAGE value="03--bai" />
-    <option name="LAST_COMMIT_MESSAGE" value="03--bai" />
+    <MESSAGE value="61801--bai" />
+    <option name="LAST_COMMIT_MESSAGE" value="61801--bai" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="224" key="#Notifications" timestamp="1591941777294">
@@ -321,46 +573,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="49" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591884875535" />
-    <state width="1076" height="357" key="GridCell.Tab.0.bottom" timestamp="1592412167769">
+    <state width="1024" height="316" key="GridCell.Tab.0.bottom" timestamp="1592461216865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1076" height="357" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592412167769" />
+    <state width="1024" height="316" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592461216865" />
     <state width="584" height="255" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="1076" height="357" key="GridCell.Tab.0.center" timestamp="1592412167769">
+    <state width="1024" height="316" key="GridCell.Tab.0.center" timestamp="1592461216865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1076" height="357" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592412167769" />
+    <state width="1024" height="316" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592461216865" />
     <state width="584" height="255" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="1076" height="357" key="GridCell.Tab.0.left" timestamp="1592412167769">
+    <state width="1024" height="316" key="GridCell.Tab.0.left" timestamp="1592461216865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1076" height="357" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592412167769" />
+    <state width="1024" height="316" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592461216865" />
     <state width="584" height="255" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="1076" height="357" key="GridCell.Tab.0.right" timestamp="1592412167769">
+    <state width="1024" height="316" key="GridCell.Tab.0.right" timestamp="1592461216865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1076" height="357" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592412167769" />
+    <state width="1024" height="316" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592461216865" />
     <state width="584" height="255" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="1076" height="357" key="GridCell.Tab.1.bottom" timestamp="1592412167769">
+    <state width="1024" height="316" key="GridCell.Tab.1.bottom" timestamp="1592461216865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1076" height="357" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592412167769" />
+    <state width="1024" height="316" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592461216865" />
     <state width="584" height="255" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="1076" height="357" key="GridCell.Tab.1.center" timestamp="1592412167769">
+    <state width="1024" height="316" key="GridCell.Tab.1.center" timestamp="1592461216865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1076" height="357" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1592412167769" />
+    <state width="1024" height="316" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1592461216865" />
     <state width="584" height="255" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="1076" height="357" key="GridCell.Tab.1.left" timestamp="1592412167769">
+    <state width="1024" height="316" key="GridCell.Tab.1.left" timestamp="1592461216865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1076" height="357" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1592412167769" />
+    <state width="1024" height="316" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1592461216865" />
     <state width="584" height="255" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
-    <state width="1076" height="357" key="GridCell.Tab.1.right" timestamp="1592412167769">
+    <state width="1024" height="316" key="GridCell.Tab.1.right" timestamp="1592461216865">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1076" height="357" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592412167769" />
+    <state width="1024" height="316" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592461216865" />
     <state width="584" height="255" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591864308607" />
+    <state x="12" y="57" width="1298" height="620" key="MergeDialog" timestamp="1592461191202">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="12" y="57" width="1298" height="620" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1592461191202" />
+    <state x="525" y="275" width="447" height="272" key="MultipleFileMergeDialog" timestamp="1592461191202">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="525" y="275" width="447" height="272" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1592461191202" />
     <state x="306" y="65" key="NewModule_or_Project.wizard" timestamp="1591638150102">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -369,14 +629,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="501" y="63" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592396878753" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1592012621683">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1592444501681">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592012621683" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1592397405053">
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592444501681" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1592460624326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592397405053" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592460624326" />
     <state x="309" y="109" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591864816990" />
     <state x="459" y="148" key="git4idea.merge.GitMergeDialog" timestamp="1592396900145">
       <screen x="0" y="0" width="1366" height="728" />
