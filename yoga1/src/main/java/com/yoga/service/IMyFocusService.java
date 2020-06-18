@@ -14,4 +14,6 @@ public interface IMyFocusService {
     List<Userinfo> getMyFocus(Integer focusid);
     //获取我的粉丝信息
     List<Userinfo> getMyFocused(Integer focusedid);
+    //取消关注操作
+    void delete(Integer focusuid, Integer focuseduid);
 }

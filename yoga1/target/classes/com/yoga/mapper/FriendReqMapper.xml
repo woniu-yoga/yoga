@@ -18,6 +18,7 @@
     <result column="isread" jdbcType="BIT" property="isread" />
     <result column="bak1" jdbcType="BIT" property="bak1" />
     <result column="bak2" jdbcType="VARCHAR" property="bak2" />
+
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--

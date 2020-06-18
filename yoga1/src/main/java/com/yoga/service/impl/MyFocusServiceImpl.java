@@ -3,6 +3,7 @@ package com.yoga.service.impl;
 import com.yoga.entity.MyFocus;
 import com.yoga.entity.MyFocusExample;
 import com.yoga.entity.Userinfo;
+import com.yoga.entity.UserinfoExample;
 import com.yoga.mapper.MyFocusMapper;
 import com.yoga.mapper.UserinfoMapper;
 import com.yoga.service.IMyFocusService;
@@ -35,7 +36,7 @@ public class MyFocusServiceImpl implements IMyFocusService {
         criteria.andFocusUidEqualTo(focusid);
         List<MyFocus> myFocusList = myFocusMapper.selectByExample(example);
         for (MyFocus myFocus : myFocusList) {
-            Userinfo userinfo = userinfoMapper.selectByPrimaryKey(myFocus.getFocusUid());
+            Userinfo userinfo = userinfoMapper.selectByPrimaryKey(myFocus.getFocusedUid());
             userinfoList.add(userinfo);
         }
         return userinfoList;
@@ -49,10 +50,19 @@ public class MyFocusServiceImpl implements IMyFocusService {
         criteria.andFocusedUidEqualTo(focusedid);
         List<MyFocus> myFocusList = myFocusMapper.selectByExample(example);
         for (MyFocus myFocus : myFocusList) {
-            Userinfo userinfo = userinfoMapper.selectByPrimaryKey(myFocus.getFocusedUid());
+            Userinfo userinfo = userinfoMapper.selectByPrimaryKey(myFocus.getFocusUid());
             userinfoList.add(userinfo);
         }
         return userinfoList;
+    }
+
+    @Override
+    public void delete(Integer focusuid, Integer focuseduid) {
+        MyFocusExample example = new MyFocusExample();
+        MyFocusExample.Criteria criteria = example.createCriteria();
+        criteria.andFocusUidEqualTo(focusuid);
+        criteria.andFocusedUidEqualTo(focuseduid);
+        myFocusMapper.deleteByExample(example);
     }
 
 }

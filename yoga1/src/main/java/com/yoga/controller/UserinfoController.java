@@ -71,6 +71,19 @@ public class UserinfoController {
         return myFocusService.getMyFocused(focusedid);
     }
 
+    //取关操作
+    @PostMapping("overfocus")
+    public boolean overfocus(Integer focusuid ,Integer focuseduid ){
+        boolean flag = true;
+        try {
+            myFocusService.delete(focusuid,focuseduid);
+        }catch(Exception e){
+            e.printStackTrace();
+            flag = false;
+        }
+        return flag;
+    }
+
     //获取所有当前用户预定瑜伽场馆的订单
     @GetMapping("getMyVenueOrder")
     public List<VenueOrder> getMyVenueOrder(Integer uid){
