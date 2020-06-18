@@ -129,11 +129,7 @@ public class UserinfoController {
         return inOuts;
     }
 
-    //查询附近的人
-    @GetMapping("nearBy")
-    public List<Userinfo> nearBy(Double lng , Double lat){
-        return userinfoService.nearBy(lng ,lat);
-    }
+
 
     //查看所有用户信息
     @GetMapping("findAll")

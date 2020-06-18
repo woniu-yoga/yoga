@@ -3,9 +3,10 @@ package com.yoga.entity;
 import java.util.List;
 
 public class Country {
-    private List provinces;
+    private List<Province> provinces;
+    private Province province;
 
-    public List getProvinces() {
+    public List<Province> getProvinces() {
         return provinces;
     }
 
@@ -77,4 +78,7 @@ public class Country {
     public void setCountryname(String countryname) {
         this.countryname = countryname;
     }
+
+
+
 }

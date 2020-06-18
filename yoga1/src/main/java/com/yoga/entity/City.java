@@ -4,6 +4,9 @@ import java.util.List;
 
 public class City {
     private List zones;
+    private Province province;
+
+
 
     public List getZones() {
         return zones;
@@ -11,6 +14,14 @@ public class City {
 
     public void setZones(List zones) {
         this.zones = zones;
+    }
+
+    public Province getProvince() {
+        return province;
+    }
+
+    public void setProvince(Province province) {
+        this.province = province;
     }
 
     /**
@@ -111,4 +122,5 @@ public class City {
     public void setPid(String pid) {
         this.pid = pid;
     }
+
 }
